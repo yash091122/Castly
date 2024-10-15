@@ -1,0 +1,141 @@
+/* Main container */
+.container {
+  display: flex;
+  height: 500px;
+  width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Contact list */
+.contact-list {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+/* Contact in the list */
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  transition: background-color 0.2s;
+}
+
+.contact:hover {
+  background-color: #e0e0e0;
+}
+
+/* Contact name */
+.contact-name {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* Chatbox styling */
+.chatbox {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5ddd5;
+}
+
+.chatbox-header {
+  background-color: #075e54;
+  padding: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatbox-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.chatbox-header .status {
+  font-size: 12px;
+  color: #b3e5c3;
+}
+
+.chatbox-body {
+  padding: 10px;
+  background-color: #efeae2;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 15px;
+  max-width: 80%;
+  display: inline-block;
+}
+
+.user-message {
+  background-color: #dcf8c6;
+  color: black;
+  margin-left: auto;
+  text-align: left;
+  border-bottom-right-radius: 0px;
+}
+
+.bot-message {
+  background-color: white;
+  color: black;
+  margin-right: auto;
+  text-align: left;
+  border-bottom-left-radius: 0px;
+}
+
+.chatbox-footer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.chatbox-footer input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+}
+
+.chatbox-footer button {
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #075e54;
+  color: white;
+  cursor: pointer;
+}
+
+/* Avatar style */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
